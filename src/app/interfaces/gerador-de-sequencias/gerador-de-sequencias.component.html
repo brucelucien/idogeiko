@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-12">
+    <br>
+    <p class="text-center">
+      <label class="radio-inline" *ngFor="let valor of quantidadesAEscolher">
+        <input type="radio" name="quantidadeEscolhida" [value]="valor" [checked]="valor == quantidadeMarcadaComoDefault" (click)="registrarValorEscolhido(valor)"> {{ valor }} &nbsp;&nbsp;
+      </label>
+    </p>
+    <br>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p class="text-center">
+      <button class="btn btn-primary btn-lg" (click)="gerarIdogeiko()">Generate</button>
+    </p>
+    <br>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <ul class="list-group">
+      <li *ngFor="let movimento of idogeiko" class="list-group-item text-capitalize">
+        {{ movimento.descricao }}
+      </li>
+    </ul>
+    <br>
+  </div>
+</div>

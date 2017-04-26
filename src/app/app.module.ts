@@ -6,11 +6,14 @@ import { HttpModule } from '@angular/http';
 import { APP_ROUTER_MODULE } from './app.router-module';
 import { AppComponent } from './app.component';
 import { TelaInicialComponent } from './interfaces/tela-inicial/tela-inicial.component';
+import { GeradorDeSequenciasComponent } from './interfaces/gerador-de-sequencias/gerador-de-sequencias.component';
+import { MovimentoRepositoryService } from "./domain/movimento-repository.service";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TelaInicialComponent
+    TelaInicialComponent,
+    GeradorDeSequenciasComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,9 @@ import { TelaInicialComponent } from './interfaces/tela-inicial/tela-inicial.com
     HttpModule,
     APP_ROUTER_MODULE
   ],
-  providers: [],
+  providers: [
+    MovimentoRepositoryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
