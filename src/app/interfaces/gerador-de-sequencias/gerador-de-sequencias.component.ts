@@ -12,9 +12,9 @@ export class GeradorDeSequenciasComponent implements OnInit {
 
   private quantidadeMarcadaComoDefault: number = 4;
 
-  private idogeiko: Array<Movimento> = undefined;
-  private quantidadesAEscolher: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  private quantidadeDesejadaPeloUsuario: number = this.quantidadeMarcadaComoDefault;
+  public idogeiko: Array<Movimento> = undefined;
+  public quantidadesAEscolher: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  public quantidadeDesejadaPeloUsuario: number = this.quantidadeMarcadaComoDefault;
 
   public constructor(
     private repositorioDeMovimentos: MovimentoRepositoryService

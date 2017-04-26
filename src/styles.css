@@ -1,4 +1,4 @@
-body {
+body, html {
     background-image: url("/assets/karate-punch-icon.png");
     background-size: 20%;
     background-repeat: no-repeat;
