@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "idk",
       "styles": [
+        "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/bootstrap/dist/css/bootstrap-theme.css",
         "styles.css"
