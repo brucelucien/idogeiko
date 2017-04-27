@@ -1,0 +1,7 @@
+.background-do-titulo-da-aplicacao {
+    background-image: url("/assets/karate-punch-icon.png");
+    background-size: 19%;
+    background-repeat: no-repeat;
+    background-position-x: 0.5em;
+    background-position-y: 1em;
+}

@@ -2,8 +2,19 @@
   <div class="col-md-12">
     <br>
     <p class="text-center">
-      <label class="radio-inline" *ngFor="let valor of quantidadesAEscolher">
-        <input type="radio" name="quantidadeEscolhida" [value]="valor" [checked]="valor == quantidadeMarcadaComoDefault" (click)="registrarValorEscolhido(valor)"> {{ valor }} &nbsp;&nbsp;
+      <label class="radio-inline fonte-com-tamanho-maior" *ngFor="let valor of quantidadesAEscolher">
+        <input type="radio" name="quantidadeEscolhida" [value]="valor" [checked]="valor == quantidadeDesejadaPeloUsuario" (click)="registrarValorEscolhido(valor)"> {{ valor }} &nbsp;&nbsp;
+      </label>
+    </p>
+    <br>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <br>
+    <p class="text-center">
+      <label class="radio-inline fonte-com-tamanho-maior" *ngFor="let tecnica of tecnicasAEscolher">
+        <input type="radio" name="tecnicaEscolhida" [value]="valor" [checked]="tecnica == tecnicaEscolhidaPeloUsuario" (click)="registrarTecnicaEscolhida(tecnica)"> {{ tipoDeTecnicaToString(tecnica) }} &nbsp;&nbsp;
       </label>
     </p>
     <br>
@@ -12,7 +23,7 @@
 <div class="row">
   <div class="col-md-12">
     <p class="text-center">
-      <button class="btn btn-primary btn-lg" (click)="gerarIdogeiko()">Generate</button>
+      <a class="btn btn-primary btn-lg" (click)="recarregarPaginaComOsParametrosEscolhidosPeloUsuario()">Generate</a>
     </p>
     <br>
   </div>
