@@ -20,7 +20,7 @@ export class MovimentoEscolhido extends Movimento {
     }
 
     private adicionarGyakuADescricao(): void {
-        if (this.exibirComoGyaku) {
+        if ((this.tipoDeTecnica == TipoDeTecnica.TE_WAZA) && this.exibirComoGyaku) {
             this.descricao = MovimentoEscolhido.GYAKU.concat(' ', this.descricao);
         }
     }

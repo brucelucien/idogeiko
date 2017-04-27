@@ -81,7 +81,7 @@ export class MovimentoRepositoryService {
         correto = (indice >= 0) && (indice < this.movimentos.length);
       }
       if ((tipoDeTecnica == TipoDeTecnica.NAO_INFORMADA) || (tipoDeTecnica == this.movimentos[indice].tipoDeTecnica)) {
-        escolhidos.push(this.movimentoToMovimentoEscolhido(this.movimentos[indice], this.jogarParOuImpar()));
+        escolhidos.push(this.movimentoToMovimentoEscolhido(this.movimentos[indice], this.movimentos[indice].admiteGyaku && this.jogarParOuImpar()));
         cont++;
       }
     }

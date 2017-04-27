@@ -1,7 +1,56 @@
+.jumbotron {
+    background-color: #444444;
+}
+
 .background-do-titulo-da-aplicacao {
     background-image: url("/assets/karate-punch-icon.png");
-    background-size: 19%;
+    background-size: 10.5em;
     background-repeat: no-repeat;
-    background-position-x: 0.5em;
-    background-position-y: 1em;
+    background-position-x: 1em;
+    background-position-y: 0.5em;
+}
+
+.text-titulo-aplicacao {
+    color: #dedede;
+    text-align: right;
+    margin-left: 0px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .background-do-titulo-da-aplicacao {
+        background-image: url("/assets/karate-punch-icon.png");
+        background-size: 12.5em;
+        background-repeat: no-repeat;
+        background-position-x: 0.5em;
+        background-position-y: 0.5em;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .background-do-titulo-da-aplicacao {
+        background-image: url("/assets/karate-punch-icon.png");
+        background-size: 12.5em;
+        background-repeat: no-repeat;
+        background-position-x: 0.5em;
+        background-position-y: 0.5em;
+    }
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .background-do-titulo-da-aplicacao {
+        background-image: url("/assets/karate-punch-icon.png");
+        background-size: 16.5em;
+        background-repeat: no-repeat;
+        background-position-x: 0.5em;
+        background-position-y: 0.5em;
+    }
+
 }
